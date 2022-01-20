@@ -143,6 +143,10 @@ public class JavaScriptExecutorConcept {
     	js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
     
+    public static void scrollIntoView(WebDriver driver, WebElement element) {
+    	JavascriptExecutor js = ((JavascriptExecutor) driver);
+    	js.executeScript("arguments[0].scrollIntoView(true)", element);
+    }
     
 
 }

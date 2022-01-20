@@ -13,14 +13,10 @@ public class HandleDropBox {
 		WebDriver driver = new ChromeDriver(); //launch chrome
 		
 		driver.get("https://scgi.half.ebay.com/ws/eBayISAPI.dll?RegisterEnterInfo&usage=2943&ru=");	//enter url
-		
+
 		//handle drop box:
 		Select select = new Select(driver.findElement(By.id("state")));
-		select.selectByVisibleText("California");
-		
-		
-		
-		
+		select.selectByVisibleText("California");	
 		
 	}
 
